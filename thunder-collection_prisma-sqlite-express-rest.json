@@ -1,0 +1,151 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "prisma-sqlite-express-rest",
+    "dateExported": "2023-02-25T12:51:32.872Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "11c64563-e081-4835-87ee-6e7bf400d46a",
+            "colId": "24484427-8857-4723-9d44-d5a8290dc020",
+            "containerId": "",
+            "name": "get user",
+            "url": "{{SITE_URL}}redis",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-08-03T11:28:42.471Z",
+            "modified": "2023-02-25T12:40:33.577Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0392f322-70b9-4af8-844d-bd90458b171b",
+            "colId": "24484427-8857-4723-9d44-d5a8290dc020",
+            "containerId": "",
+            "name": "get user by Id",
+            "url": "{{SITE_URL}}{id}",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-02-25T07:41:43.087Z",
+            "modified": "2023-02-25T07:43:05.527Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "63f9ba82a4f3093d9b4a5c0e",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "d7f6616e-35ac-455a-b2a8-31b5e3fb22b8",
+            "colId": "24484427-8857-4723-9d44-d5a8290dc020",
+            "containerId": "",
+            "name": "get user by Id Copy",
+            "url": "{{SITE_URL}}{id}",
+            "method": "GET",
+            "sortNum": 17500,
+            "created": "2023-02-25T07:43:42.467Z",
+            "modified": "2023-02-25T07:43:42.467Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "63f9ba82a4f3093d9b4a5c0e",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "fecf7df4-957b-4911-9192-e80cab0c8515",
+            "colId": "24484427-8857-4723-9d44-d5a8290dc020",
+            "containerId": "",
+            "name": "update user by id",
+            "url": "{{SITE_URL}}{id}",
+            "method": "PUT",
+            "sortNum": 17500,
+            "created": "2023-02-25T07:43:46.356Z",
+            "modified": "2023-02-25T07:46:07.335Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "63f9ba82a4f3093d9b4a5c0e",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"name\": \"Manikandan\",\n   \"auth.macId\": \"23343435\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "628caf42-51ff-4b22-85b0-f72954254b09",
+            "colId": "24484427-8857-4723-9d44-d5a8290dc020",
+            "containerId": "",
+            "name": "delete user by id",
+            "url": "{{SITE_URL}}{id}",
+            "method": "DELETE",
+            "sortNum": 18750,
+            "created": "2023-02-25T07:47:07.582Z",
+            "modified": "2023-02-25T07:49:22.571Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "63f9ba82a4f3093d9b4a5c0e",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "79a41cb9-9157-4397-8b3e-17644a539b2c",
+            "colId": "24484427-8857-4723-9d44-d5a8290dc020",
+            "containerId": "",
+            "name": "add user",
+            "url": "{{SITE_URL}}",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2022-08-03T13:35:04.326Z",
+            "modified": "2023-02-25T07:38:04.182Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Raja\",\n  \"email\": \"raja1@gmail.com\",\n  \"password\": \"123456\",\n  \"auth.macId.add\": \"34efdfgdf\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "55978655-5a8e-454c-9fb7-d79600f1b9ec",
+            "colId": "24484427-8857-4723-9d44-d5a8290dc020",
+            "containerId": "",
+            "name": "Login",
+            "url": "{{SITE_URL}}/users/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2022-11-04T10:39:30.702Z",
+            "modified": "2022-11-04T10:39:51.761Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"anthu1510\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [],
+        "tests": [],
+        "envId": "c4d9d2c0-2b92-4c25-af0e-ee8b1d8d2d53"
+    }
+}
